@@ -1,13 +1,16 @@
----
-title: ResumeAnalyzer18
-emoji: 📉
-colorFrom: indigo
-colorTo: yellow
-sdk: streamlit
-sdk_version: 1.41.1
-app_file: app.py
-pinned: false
-license: apache-2.0
----
+# ResumeEase – AI-Powered Resume Analyzer
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+ResumeEase is a Streamlit web app that scans PDF resumes, extracts text with OCR,  
+and uses Google Generative AI to give insights and improvement tips.
+
+## Features
+- Extracts text from PDF resumes (even scanned PDFs) using **pdfplumber** + **pytesseract**.
+- Analyzes content with **Google Generative AI** for skills, summary, and ATS optimization.
+- Simple **Streamlit** UI for quick upload and results.
+
+## Installation
+```bash
+git clone https://github.com/<your-username>/ResumeEase.git
+cd ResumeEase
+pip install -r requirements.txt
+streamlit run app.py
